@@ -54,12 +54,7 @@ public class Main {
             while (continuer) {
                 float soldeActuel = Float.parseFloat(utilisateurs[indexUtilisateur][3]);
 
-                System.out.println("\n--- SERVICES DISPONIBLES ---");
-                System.out.println("1 : Consulter le solde");
-                System.out.println("2 : Effectuer un retrait");
-                System.out.println("3 : Effectuer un transfert");
-                System.out.println("4 : Quitter");
-                System.out.print("Votre choix : ");
+                afficherMenu();
                 int choix = sc.nextInt();
 
                 if (choix == 1) {
